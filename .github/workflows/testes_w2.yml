@@ -1,0 +1,47 @@
+name: Validacao Tecnica
+on: [push]
+
+jobs:
+  teste-ads:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Codigo
+      uses: actions/checkout@v4
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Executar Teste Automatizado ADS
+      run: |
+        OUTPUT=$(echo -e "20\n35" | python src/coleta_ads.py)
+        if [[ "$OUTPUT" =~ "Volume Total: 55" && "$OUTPUT" =~ "Status: Capacidade Maxima Atingida" ]]; then
+          echo "✅ Teste ADS Aprovado!"
+        else
+          echo "❌ Teste ADS Falhou: Motor de repetição ou tratamento de limite incorreto."
+          exit 1
+        fi
+
+  teste-si:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Codigo
+      uses: actions/checkout@v4
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Executar Teste Automatizado SI
+      run: |
+        python -c "
+        from src.governanca_si import calcular_eficiencia_financeira
+        res = calcular_eficiencia_financeira(10.0)
+        if res == 'Alerta: Alto Custo de Ociosidade Detectado':
+            print('✅ Teste SI Aprovado!')
+        else:
+            print('❌ Teste SI Falhou: Logica de calculo de ociosidade incorreta.')
+            exit(1)
+        "
