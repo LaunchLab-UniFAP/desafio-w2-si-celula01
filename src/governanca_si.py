@@ -7,10 +7,15 @@ METADADOS_COMPLIANCE = {
 
 def calcular_eficiencia_financeira(volume_final):
     piso_critico = METADADOS_COMPLIANCE["limite_frota_m3"] * METADADOS_COMPLIANCE["piso_ociosidade_percentual"]
+    print(piso_critico)
     
     if volume_final < piso_critico:
         return "Alerta: Alto Custo de Ociosidade Detectado"
+
+    if volume_final > METADADOS_COMPLIANCE["limite_frota_m3"]:
+        return "Alerta: Carga máxima excedida, risco de multa ambiental"
+    
     return "Eficiencia Economica Aceitavel"
 
 if __name__ == "__main__":
-    print(calcular_eficiencia_financeira(12.5)) 
+    print(calcular_eficiencia_financeira(15)) 

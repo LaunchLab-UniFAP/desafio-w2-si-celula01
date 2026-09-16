@@ -42,25 +42,25 @@ O uso de ferramentas de IA (como ChatGPT, GitHub Copilot ou Claude) no LaunchLab
 Instrução: Edite as seções abaixo preenchendo as evidências críticas da dupla até o prazo limite estipulado no ciclo semanal.
 ## 📂 Identificação
 
-* Curso: [Sistemas de Informação / ADS]
-* Membro 1 (Nome & GitHub): @[Username] - [Nome Completo]
-* Membro 2 (Nome & GitHub): @[Username] - [Nome Completo]
-* Embaixador Vinculado: @[Username] - [Nome do Monitor]
+* Curso: Sistemas de Informação
+* Membro 1 (Nome & GitHub): @Chroanz - Hans Christian Oliveira de Alencar
+* Membro 2 (Nome & GitHub): @caiotomaza - Caio Tomaz Araújo Silva
+* Embaixador Vinculado: @luisz19 - Luis Henrique Sanches Alencar
 
 ## 🌍 Seção de Análise Crítica (Formação Geral)
 
 Com base no cenário proposto da semana, descreva qual o impacto humano, social, ético ou ambiental da tecnologia que sua célula colocou em produção. Como as decisões de código impactam o mundo físico e a vida do cidadão/empresa?
-💬 RESPOSTA DA CÉLULA: [Escreva sua análise crítica aqui]
+💬 RESPOSTA DA CÉLULA: O impacto se dá na limitação de carga máxima, protegendo a equipe de acidentes e a empresa de multas, além de evitar que ocorram não conformidades e vazamento de lixo na rua. Também se dá na checagem do piso da carga, evitando que seja emitida uma quantidade exorbitante de gases poluentes, assim como evitando o desperdíico de combustível e de dinheiro.
 
 ## 💻 Seção de Engenharia e Governança de TI
 
 Justifique a decisão de arquitetura técnica adotada pela célula nesta entrega. Como as regras de negócio de ADS e as estruturas de dados de SI foram construidas para garantir que a solução seja escalável e de fácil manutenção?
-💬 RESPOSTA DA CÉLULA: [Escreva sua justificativa técnica aqui]
+💬 RESPOSTA DA CÉLULA: 
 
 ## 🛠️ Diário de Bordo da Bancada
 
-* Maior travamento técnico superado pela dupla durante a semana: [Relate aqui]
-* Como a intervenção ou a Issue aberta para o Embaixador ajudou a destravar a célula: [Relate aqui]
+* Maior travamento técnico superado pela dupla durante a semana: Nenhum.
+* Como a intervenção ou a Issue aberta para o Embaixador ajudou a destravar a célula: A comunicação ativa ajudou.
 
 
 
